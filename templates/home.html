@@ -3,7 +3,18 @@
 
 <h1>Hello {{request.user}}!!!</h1>
 <h2> We Love You :)</h2>
-<h2>{{text}}</h2>
+<h2>Context: {{text}}</h2>
+
+<ul>
+{% for x in array %}
+{% if x == 'abc' %}
+<li>{{forloop.counter}} - {{x|upper}}</li>
+{% else %}
+<li>{{forloop.counter}} - {{x}}</li>
+{% endif %}
+{% endfor %}
+</ul>
+
 
 
 

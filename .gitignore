@@ -1,6 +1,7 @@
 .DS_STORE
 
 # Virtualenv related
+env/
 bin/
 include/
 pip-selfcheck.json
