@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Welcome to Song Details View!</h2>
+  <h3>Hey {{user|title}}, here are your song details</h3>
+  <b>Name:</b> {{song.title}} <br>
+  <b>Album:</b> {{song.album}} <br>
+  <b>Year:</b> {{song.year}} <br>
+{% endblock %}
